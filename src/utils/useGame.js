@@ -29,6 +29,7 @@ export const GameProvider = ({children}) => {
 
     const endGame = () => {
         setQuestions(questionsArray)
+        setScore(0)
         setGameStarted(false)
     }
     

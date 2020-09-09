@@ -33,11 +33,14 @@ const Game = () => {
                 <Score/>
             </div>
             {firstQ && <Question query={firstQ} handleOptionChange={handleOptionChange} />}
-            <div className="game-controls">
-                <Button onClick={handleAnswer}>Submit</Button>
-                <Button onClick={handleSkip} disabled={questions.length < 2}>Skip</Button>
+            <div className="game-controls" style={{textAlign: 'center'}}>
+                <Button variant="success" className="mt-4 mr-4" onClick={handleAnswer}>Submit</Button>
+                <Button variant="primary" className="mt-4 mr-4" onClick={handleSkip} disabled={questions.length < 2}>Skip</Button>
             </div>
-            <Button>Give Up</Button>
+            <div style={{textAlign: 'center'}}>
+                <Button variant="secondary" size="sm" className="mt-4">Give Up</Button>
+            </div>
+            
         </>
     )
 }

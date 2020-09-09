@@ -11,12 +11,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Basic application logic in place
 - Score-tallying and game reset
+- Shuffling
 - Questions are still hardcoded
 
 ## Still to be done
 
 - API consumption
-- Shuffling
 - Design
 
 ### `npm start`
